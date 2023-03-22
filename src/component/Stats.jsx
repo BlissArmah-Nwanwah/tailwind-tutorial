@@ -1,6 +1,7 @@
 import React from "react";
 import A1 from "../assets/A1.png";
 import A2 from "../assets/A2.png";
+import pic1 from "../assets/pic1.png";
 const Stats = () => {
   return (
     <div className="w-full flex justify-between ">
@@ -45,8 +46,17 @@ const Stats = () => {
         </div>
       </div>
       <div className="relative w-[600px]  ">
-          <img className="w-full h-full object-contain" src={A1} alt="" />
-        <div className="absolute top-[209px] left-[-222px] ">
+        <div className=" relative">
+          <img className="w-full h-full object-contain relative" src={A1} alt="" />
+          <div className="w-[215px] h-[61px] flex justify-start rounded-md shadow absolute bg-[#ffffff] left-28 top-[-30px] ">
+            <img className="ml-2" src={pic1} alt="" />
+            <div className="ml-2">
+              <h1>Cody Fisher</h1>
+              <p>give rating <span>4.5</span></p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute  top-[249px] left-[-222px] ">
           <img src={A2} alt="" />
         </div>
       </div>
